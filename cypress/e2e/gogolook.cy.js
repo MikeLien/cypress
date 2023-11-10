@@ -13,6 +13,6 @@ describe('PChome24h Product Verification', () => {
 			cy.visit(href)
 		})
 
-		cy.get('.c-prodSpecs').screenshot('product_details');
+		cy.get('.c-prodSpecs').scrollIntoView().screenshot('product_details');
 	});
 });
